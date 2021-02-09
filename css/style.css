@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    animation-duration: .5s;
+    animation-name: fade;
+    background-image: linear-gradient(180deg, #ffe6e6 0%, #ffabe1 33%, #a685e2 66%, #6155a6 100%);
+    background-repeat: no-repeat;
+    color: #222831;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik-Regular', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+    padding: 60px 0 0;
+    transition: all .3s ease;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    min-width: 100vw;
+}
+
+.container--header {
+    align-items: stretch;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+/* Header */
+.header {
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 5px 10px 0 rgba(0, 64, 128, .05);
+    color: #222831;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    transition: all .5s ease;
+    width: 100%;
+}
+
+.header__logo {
+    align-items: center;
+    display: flex;
+}
+
+.header__link {
+    white-space: nowrap;
+}
+
+.header__icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+.header__icon--logo {
+    background-image: url(/assets/images/playblunts-logo-lightmode.svg);
+    background-size: 45px 45px;
+    margin-right: 5px;
+    height: 45px;
+    width: 45px;
+}
+
+.header__title {
+    display: inline-block;
+    text-rendering: optimizeLegibility;
+    transition: all .3s ease;
+    vertical-align: middle;
+}
+
+.header__title--logo {
+    font-weight: bold;
+}
+
+.header__options {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.header__social {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.header__link--social {
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.header__link--social-twitter {
+    background-color: #1b95e0;
+    color: #FFF;
+    padding: 3px 3px;
+}
+
+.header__link--social-github {
+    background-color: #eff3f6;
+    border: 1px solid;
+    border-color: rgba(27, 31, 35, .2);
+    color: #000;
+    padding: 2px 3px;
+}
+
+.header__switch {
+    align-items: center;
+    background-color: #343D58;
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    display: flex;
+    height: 20px;
+    justify-content: space-evenly;
+    outline: none;
+    position: relative;
+    width: 50px;
+}
+
+.header__switch::after {
+    background-color: #F1F1F1;;
+    border-radius: 100px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
+    content: "";
+    display: block;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    right: unset;
+    top: 50;
+    transition: all .3s ease;
+    width: 24px;
+}
+
+.header__icon--switch {
+    color: #FFF;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+}
+
+.header__menu {
+    cursor: pointer;
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.header__menu:hover .header__menu-main {
+    display: block;
+}
+
+.header__icon--menu {
+    color: #000000;
+    font-size: 35px;
+    margin-right: 8px;
+}
+
+.header__title--menu {
+
+}
+
+.header__menu-main {
+    animation-duration: .2s;
+    animation-name: drop;
+    background-color: #FFF;
+    border-radius: 0 0 6px 6px;
+    border-top: 1px solid #e9f2f9;
+    box-shadow: 0 10px 40px -10px rgba(0, 64, 128, .2);
+    color: #222831;
+    display: none;
+    font-size: 14px;
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    transform-origin: top;
+    transition: all .3s ease;
+    z-index: 100;
+}
+
+.header__menu-main--show {
+    display: block;
+}
+
+.header__link--menu {
+    border: none;
+    border-radius: 0;
+    display: block;
+    line-height: 36px;
+    margin: 0;
+    padding: 0 60px 0 20px;
+    text-align: left;
+    transition: all .3s ease;
+}
+
+.header__link--selected {
+    color: #899bb4;
+}
+
+.header__seperator {
+    background-color: #e9f2f9;
+    height: 1px;
+}
