@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,61 +8,351 @@
     <link rel="stylesheet" href="/css/all.min.css">
     <title>Play Blunts</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container container--header">
-            <div class="header__logo">
-                <a class="header__link" aria-label="Todas las fotos" href="#">
-                    <span id="header__icon--logo" class="header__icon header__icon--logo"></span>
-                    <span id="header__title--logo" class="header__title header__title--logo">Play Blunts</span>
-                </a>
-            </div>
-            <div class="header__options">
-                <div class="header__social">
-                    <a href="https://twitter.com/dpokey_" class="header__link header__link--social header__link--social-twitter" target="blank">
-                        <i class="fab fa-twitter"></i>
-                        <span class="header__title header__title--social header__title--social-twitter">Twitter</span>
-                    </a>
-                    <a href="https://github.com/dpokey" class="header__link header__link--social header__link--social-github">
-                        <i class="far fa-star"></i>
-                        <span class="header__title header__title--social header__title--social-github">Star</span>
+    <div class="container">
+        <header class="header">
+            <div class="container--header">
+                <div class="header-logo">
+                    <a class="header-logo__link" aria-label="Todas las fotos" href="#">
+                        <span id="header__icon--logo" class="header-logo__icon"></span>
+                        <span id="header__title--logo" class="header-logo__title">Play Blunts</span>
                     </a>
                 </div>
-                <button id="header__switch" class="header__switch">
-                    <span class="header__icon header__icon--switch">
-                        <i class="fas fa-sun"></i>
-                    </span>
-                    <span class="header__icon header__icon--switch">
-                        <i class="fas fa-moon"></i>
-                    </span>
-                </button>
-                <div id="header__menu" class="header__menu">
-                    <span class="header__icon header__icon--menu">
-                        <i class="fas fa-poo"></i>
-                    </span>
-                    <span class="header__title header__title--menu">Perfil</span>
-                    <div id="header__menu-main" class="header__menu-main">
-                        <a data-button="account" class="header__link header__link--menu header__link--selected" href="#">Cuenta</a>
-                        <div id="header__seperator" class="header__seperator"></div>
-                        <a data-button="closesession" class="header__link header__link--menu" href="#">Cerrar Sesion</a>
+                <div class="header-options">
+                    <div class="social-media">
+                        <a href="https://twitter.com/dpokey_" class="social-media__link social-media__link--twitter"
+                            target="blank">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-media__title">Twitter</span>
+                        </a>
+                        <a href="https://github.com/dpokey" class="social-media__link social-media__link--github"
+                            target="blank">
+                            <i class="far fa-star"></i>
+                            <span class="social-media__title">Star</span>
+                        </a>
+                    </div>
+                    <button id="switch-theme" class="switch-theme">
+                        <span class="switch-theme__icon">
+                            <i class="fas fa-sun"></i>
+                        </span>
+                        <span class="switch-theme__icon">
+                            <i class="fas fa-moon"></i>
+                        </span>
+                    </button>
+                    <div id="header-profile" class="header-profile">
+                        <span class="header-profile__icon">
+                            <i class="fas fa-poo"></i>
+                        </span>
+                        <!-- <span class="header-profile__title">Perfil</span> -->
+                        <div id="header__menu-main" class="dmenu-profile">
+                            <a data-button="account" class="dmenu-profile__link dmenu-profile__link--selected"
+                                href="#">Cuenta</a>
+                            <div id="header__seperator" class="dmenu-profile__seperator"></div>
+                            <a data-button="closesession" class="dmenu-profile__link" href="#">Cerrar Sesion</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container container--main">
-            <section class="section-search">
-                <h1 class="section-search__title">¿Que quieres ver hoy?</h1>
-                <div class="search-box">
-                    <input type="search" name="q" class="search-box__input" placeholder="Buscar..." aria-label="Buscar" autocomplete="off">
-                    <i class="fas fa-search search-box__icon"></i>
-                </div>
-            </section>
-            <section class="section-movie">
-            </section>
-        </div>
-    </main>
-    <footer class="footer"></footer>
+        </header>
+        <main class="main">
+            <div class="container--main">
+                <section class="section-search">
+                    <h1 class="section-search__title">¿Que quieres ver hoy?</h1>
+                    <div class="search-box">
+                        <input type="search" name="q" class="search-box__input" placeholder="Buscar..."
+                            aria-label="Buscar" autocomplete="off">
+                        <i class="fas fa-search search-box__icon"></i>
+                    </div>
+                </section>
+                <section class="section-movie">
+                    <h1 class="section-movie__title">Mi lista</h1>
+                    <div class="movie-carousel">
+                        <div class="movie-carousel__container">
+                            <article class="movie-card">
+                                <header class="movie-card__header">
+                                    <img src="/assets/images/1.jpg" alt="background" class="movie-card__img">
+                                </header>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__actions">
+                                        <!-- Bloque -->
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-play action-button__icon"></i>
+                                        </button>
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-plus action-button__icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="movie-card__details">
+                                        <h5 class="movie-card__title">Movie Title</h5>
+                                        <div class="movie-card__subtitle">
+                                            <span class="movie-card__ano">2021</span>
+                                            <span class="movie-card__age">16</span>
+                                            <span class="movie-card__time">114</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="movie-card">
+                                <header class="movie-card__header">
+                                    <img src="/assets/images/2.jpg" alt="background" class="movie-card__img">
+                                </header>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__actions">
+                                        <!-- Bloque -->
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-play action-button__icon"></i>
+                                        </button>
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-plus action-button__icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="movie-card__details">
+                                        <h5 class="movie-card__title">Movie Title</h5>
+                                        <div class="movie-card__subtitle">
+                                            <span class="movie-card__ano">2021</span>
+                                            <span class="movie-card__age">16</span>
+                                            <span class="movie-card__time">114</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="movie-card">
+                                <header class="movie-card__header">
+                                    <img src="/assets/images/3.jpg" alt="background" class="movie-card__img">
+                                </header>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__actions">
+                                        <!-- Bloque -->
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-play action-button__icon"></i>
+                                        </button>
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-plus action-button__icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="movie-card__details">
+                                        <h5 class="movie-card__title">Movie Title</h5>
+                                        <div class="movie-card__subtitle">
+                                            <span class="movie-card__ano">2021</span>
+                                            <span class="movie-card__age">16</span>
+                                            <span class="movie-card__time">114</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="movie-card">
+                                <header class="movie-card__header">
+                                    <img src="/assets/images/4.jpg" alt="background" class="movie-card__img">
+                                </header>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__actions">
+                                        <!-- Bloque -->
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-play action-button__icon"></i>
+                                        </button>
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-plus action-button__icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="movie-card__details">
+                                        <h5 class="movie-card__title">Movie Title</h5>
+                                        <div class="movie-card__subtitle">
+                                            <span class="movie-card__ano">2021</span>
+                                            <span class="movie-card__age">16</span>
+                                            <span class="movie-card__time">114</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="movie-card">
+                                <header class="movie-card__header">
+                                    <img src="/assets/images/5.jpg" alt="background" class="movie-card__img">
+                                </header>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__actions">
+                                        <!-- Bloque -->
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-play action-button__icon"></i>
+                                        </button>
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-plus action-button__icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="movie-card__details">
+                                        <h5 class="movie-card__title">Movie Title</h5>
+                                        <div class="movie-card__subtitle">
+                                            <span class="movie-card__ano">2021</span>
+                                            <span class="movie-card__age">16</span>
+                                            <span class="movie-card__time">114</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="movie-card">
+                                <header class="movie-card__header">
+                                    <img src="/assets/images/6.jpg" alt="background" class="movie-card__img">
+                                </header>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__actions">
+                                        <!-- Bloque -->
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-play action-button__icon"></i>
+                                        </button>
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-plus action-button__icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="movie-card__details">
+                                        <h5 class="movie-card__title">Movie Title</h5>
+                                        <div class="movie-card__subtitle">
+                                            <span class="movie-card__ano">2021</span>
+                                            <span class="movie-card__age">16</span>
+                                            <span class="movie-card__time">114</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="movie-card">
+                                <header class="movie-card__header">
+                                    <img src="/assets/images/7.jpg" alt="background" class="movie-card__img">
+                                </header>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__actions">
+                                        <!-- Bloque -->
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-play action-button__icon"></i>
+                                        </button>
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-plus action-button__icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="movie-card__details">
+                                        <h5 class="movie-card__title">Movie Title</h5>
+                                        <div class="movie-card__subtitle">
+                                            <span class="movie-card__ano">2021</span>
+                                            <span class="movie-card__age">16</span>
+                                            <span class="movie-card__time">114</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="movie-card">
+                                <header class="movie-card__header">
+                                    <img src="/assets/images/8.jpg" alt="background" class="movie-card__img">
+                                </header>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__actions">
+                                        <!-- Bloque -->
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-play action-button__icon"></i>
+                                        </button>
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-plus action-button__icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="movie-card__details">
+                                        <h5 class="movie-card__title">Movie Title</h5>
+                                        <div class="movie-card__subtitle">
+                                            <span class="movie-card__ano">2021</span>
+                                            <span class="movie-card__age">16</span>
+                                            <span class="movie-card__time">114</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="movie-card">
+                                <header class="movie-card__header">
+                                    <img src="/assets/images/9.jpg" alt="background" class="movie-card__img">
+                                </header>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__actions">
+                                        <!-- Bloque -->
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-play action-button__icon"></i>
+                                        </button>
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-plus action-button__icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="movie-card__details">
+                                        <h5 class="movie-card__title">Movie Title</h5>
+                                        <div class="movie-card__subtitle">
+                                            <span class="movie-card__ano">2021</span>
+                                            <span class="movie-card__age">16</span>
+                                            <span class="movie-card__time">114</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="movie-card">
+                                <header class="movie-card__header">
+                                    <img src="/assets/images/10.jpg" alt="background" class="movie-card__img">
+                                </header>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__actions">
+                                        <!-- Bloque -->
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-play action-button__icon"></i>
+                                        </button>
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-plus action-button__icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="movie-card__details">
+                                        <h5 class="movie-card__title">Movie Title</h5>
+                                        <div class="movie-card__subtitle">
+                                            <span class="movie-card__ano">2021</span>
+                                            <span class="movie-card__age">16</span>
+                                            <span class="movie-card__time">114</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="movie-card">
+                                <header class="movie-card__header">
+                                    <img src="/assets/images/11.jpg" alt="background" class="movie-card__img">
+                                </header>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__actions">
+                                        <!-- Bloque -->
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-play action-button__icon"></i>
+                                        </button>
+                                        <button class="action-button" type="button">
+                                            <i class="fas fa-plus action-button__icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="movie-card__details">
+                                        <h5 class="movie-card__title">Movie Title</h5>
+                                        <div class="movie-card__subtitle">
+                                            <span class="movie-card__ano">2021</span>
+                                            <span class="movie-card__age">16</span>
+                                            <span class="movie-card__time">114</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container--footer">
+                <nav class="footer-nav">
+                    <ul class="lmenu-references">
+                        <li class="lmenu-references__item"><a href="#" class="lmenu-references__link">Terminos de
+                                uso</a></li>
+                        <li class="lmenu-references__item"><a href="#" class="lmenu-references__link">Declaracion de
+                                privacidad</a></li>
+                        <li class="lmenu-references__item"><a href="#" class="lmenu-references__link">Centro de
+                                ayuda</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
