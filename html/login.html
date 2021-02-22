@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container--header">
+                <div class="header-logo">
+                    <a class="header-logo__link" aria-label="Todas las fotos" href="#">
+                        <span id="header__icon--logo" class="header-logo__icon"></span>
+                        <span id="header__title--logo" class="header-logo__title">Play Blunts</span>
+                    </a>
+                </div>
+                <div class="header-options">
+                    <div class="social-media">
+                        <a href="https://twitter.com/dpokey_" class="social-media__link social-media__link--twitter"
+                            target="blank">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-media__title">Twitter</span>
+                        </a>
+                        <a href="https://github.com/dpokey" class="social-media__link social-media__link--github"
+                            target="blank">
+                            <i class="far fa-star"></i>
+                            <span class="social-media__title">Star</span>
+                        </a>
+                    </div>
+                    <button id="switch-theme" class="switch-theme">
+                        <span class="switch-theme__icon">
+                            <i class="fas fa-sun"></i>
+                        </span>
+                        <span class="switch-theme__icon">
+                            <i class="fas fa-moon"></i>
+                        </span>
+                    </button>
+                    <div id="header-profile" class="header-profile">
+                        <span class="header-profile__icon">
+                            <i class="fas fa-poo"></i>
+                        </span>
+                        <!-- <span class="header-profile__title">Perfil</span> -->
+                        <div id="header__menu-main" class="dmenu-profile">
+                            <a data-button="account" class="dmenu-profile__link dmenu-profile__link--selected"
+                                href="#">Cuenta</a>
+                            <div id="header__seperator" class="dmenu-profile__seperator"></div>
+                            <a data-button="closesession" class="dmenu-profile__link" href="#">Cerrar Sesion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container--main">
+                <section class="section-login">
+                    <div class="login">
+                        <h1 class="login__title">Inicio Sesion</h1>
+                        <form action="" class="login-form">
+                            <input type="text" placeholder="Correo" class="login-form__input login-form__input--user">
+                            <input type="password" placeholder="Password" class="login-form__input login-form__input--pass">
+                            <button class="login-form__button login-form__button--login">Iniciar sesion</button>
+                            <div class="login-social">
+                                <a href="#" class="login-social__button login-social__button--google">
+                                    <img src="/assets/images/google-icon.svg" alt="google-logo" class="login-social__icon login-social__icon--google">         
+                                    <span class="login-social__text">Iniciar sesion con Google</span>
+                                </a>
+                                <a href="#" class="login-social__button login-social__button--twitter">
+                                    <i class="fab fa-twitter login-social__icon login-social__icon--twitter"></i>
+                                    <span class="login-social__text">Iniciar sesion con Twitter</span>
+                                </a>
+                            </div>
+                            <div class="login-form__remember">
+                                <label for="" class="login-form__label">
+                                    Recuerdame
+                                    <input type="checkbox" class="login-form__checkbox">
+                                </label>
+                                <a href="#" class="login-form__link">Olvide mi contraseña</a>
+                            </div>
+                        </form>
+
+                        <div class="login-register">
+                            <span class="login-register__text">No tienes ninguna cuenta? </span>
+                            <a href="/html/register.html" class="login-register__link">Registrate</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container--footer">
+                <nav class="footer-nav">
+                    <ul class="lmenu-references">
+                        <li class="lmenu-references__item"><a href="#" class="lmenu-references__link">Terminos de
+                                uso</a></li>
+                        <li class="lmenu-references__item"><a href="#" class="lmenu-references__link">Declaracion de
+                                privacidad</a></li>
+                        <li class="lmenu-references__item"><a href="#" class="lmenu-references__link">Centro de
+                                ayuda</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
