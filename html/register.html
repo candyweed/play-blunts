@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container--header">
+                <div class="header-logo">
+                    <a class="header-logo__link" aria-label="Todas las fotos" href="#">
+                        <span id="header__icon--logo" class="header-logo__icon"></span>
+                        <span id="header__title--logo" class="header-logo__title">Play Blunts</span>
+                    </a>
+                </div>
+                <div class="header-options">
+                    <div class="social-media">
+                        <a href="https://twitter.com/dpokey_" class="social-media__link social-media__link--twitter"
+                            target="blank">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-media__title">Twitter</span>
+                        </a>
+                        <a href="https://github.com/dpokey" class="social-media__link social-media__link--github"
+                            target="blank">
+                            <i class="far fa-star"></i>
+                            <span class="social-media__title">Star</span>
+                        </a>
+                    </div>
+                    <button id="switch-theme" class="switch-theme">
+                        <span class="switch-theme__icon">
+                            <i class="fas fa-sun"></i>
+                        </span>
+                        <span class="switch-theme__icon">
+                            <i class="fas fa-moon"></i>
+                        </span>
+                    </button>
+                    <div id="header-profile" class="header-profile">
+                        <span class="header-profile__icon">
+                            <i class="fas fa-poo"></i>
+                        </span>
+                        <!-- <span class="header-profile__title">Perfil</span> -->
+                        <div id="header__menu-main" class="dmenu-profile">
+                            <a data-button="account" class="dmenu-profile__link dmenu-profile__link--selected"
+                                href="#">Cuenta</a>
+                            <div id="header__seperator" class="dmenu-profile__seperator"></div>
+                            <a data-button="closesession" class="dmenu-profile__link" href="#">Cerrar Sesion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container--main">
+                <section class="section-register">
+                    <div class="register">
+                        <h1 class="register__title">Registrate</h1>
+                        <form action="" class="register-form">
+                            <input type="text" placeholder="Nombre" class="register-form__input register-form__input--user">
+                            <input type="text" placeholder="Correo" class="register-form__input register-form__input--email">
+                            <input type="password" placeholder="Password" class="register-form__input register-form__input--pass">
+                            <button class="register-form__button register-form__button--register">Registrarme</button>
+                        </form>
+                        <div class="register-login">
+                            <a href="/html/login.html" class="register-login__link">Iniciar sesion</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container--footer">
+                <nav class="footer-nav">
+                    <ul class="lmenu-references">
+                        <li class="lmenu-references__item"><a href="#" class="lmenu-references__link">Terminos de
+                                uso</a></li>
+                        <li class="lmenu-references__item"><a href="#" class="lmenu-references__link">Declaracion de
+                                privacidad</a></li>
+                        <li class="lmenu-references__item"><a href="#" class="lmenu-references__link">Centro de
+                                ayuda</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
