@@ -26,7 +26,7 @@ a {
     grid-template-areas: "header"
         "main"
         "footer";
-    grid-template-columns: 100vw;
+    grid-template-columns: 100%;
     grid-template-rows: 50px 1fr auto;
     min-height: 100vh;
 }
@@ -60,7 +60,7 @@ a {
     color: #FFF;
     grid-area: header;
     height: 50px;
-    min-width: 100vw;
+    min-width: 100%;
     position: fixed;
     transition: all .5s ease;
     z-index: 1000;
@@ -79,7 +79,7 @@ a {
 }
 
 .header-logo__icon {
-    background-image: url(/assets/images/playblunts-logo-darkmode.svg);
+    background-image: url(../assets/images/playblunts-logo-darkmode.svg);
     background-repeat: no-repeat;
     background-size: 35px 35px;
     display: inline-block;
@@ -329,7 +329,6 @@ a {
     overflow-y: hidden;
     padding: 15px 0;
     position: relative;
-    width: 100%;
 }
 
 .movie-carousel::-webkit-scrollbar {
