@@ -26,8 +26,8 @@ a {
     grid-template-areas: "header"
         "main"
         "footer";
-    grid-template-columns: 100vw;
-    grid-template-rows: 50px 1fr minmax(50px, auto);
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 1fr;
     min-height: 100vh;
 }
 
