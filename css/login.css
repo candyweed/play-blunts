@@ -27,7 +27,7 @@ a {
         "main"
         "footer";
     grid-template-columns: 100vw;
-    grid-template-rows: 50px 1fr auto;
+    grid-template-rows: 50px 1fr minmax(50px, auto);
     min-height: 100vh;
 }
 
@@ -431,7 +431,6 @@ a {
     background-color: #8F57FD;
     color: #FFF;
     grid-area: footer;
-    height: max-content;
     transition: all .5s ease;
 }
 
